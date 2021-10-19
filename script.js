@@ -8,6 +8,7 @@ var numero
 function add() {
     numero = document.getElementById("leNumero").value;
     lista.push(numero);
+    document.getElementById("leNumero").value = "";
 }
 
 function listar() {
@@ -19,11 +20,11 @@ function mostrarMayor() {
     mayor = listaOrdenada[listaOrdenada.length - 1];
     document.getElementById("mayor").innerHTML = "Mayor: " + mayor;
     if (mayor >= 100) {
-        document.getElementById("mayor").classList.add("verde")
-        document.getElementById("mayor").classList.remove("rojo")
+        document.getElementById("mayor").classList.add("verde");
+        document.getElementById("mayor").classList.remove("rojo");
     } else {
-        document.getElementById("mayor").classList.add("rojo")
-        document.getElementById("mayor").classList.remove("verde")
+        document.getElementById("mayor").classList.add("rojo");
+        document.getElementById("mayor").classList.remove("verde");
     }
 }
 
@@ -32,11 +33,11 @@ function mostrarMenor() {
     menor = listaOrdenada[0];
     document.getElementById("menor").innerHTML = "Menor: " + menor;
     if (menor < 100) {
-        document.getElementById("menor").classList.add("verde")
-        document.getElementById("menor").classList.remove("rojo")
+        document.getElementById("menor").classList.add("verde");
+        document.getElementById("menor").classList.remove("rojo");
     } else {
-        document.getElementById("menor").classList.add("rojo")
-        document.getElementById("menor").classList.remove("verde")
+        document.getElementById("menor").classList.add("rojo");
+        document.getElementById("menor").classList.remove("verde");
     }
 
 }
