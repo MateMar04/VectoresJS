@@ -1,3 +1,38 @@
+* {
+ font-family: Roboto;
+}
+
+body {
+    background-color: rgb(36, 37, 40);
+}
+
+button {
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px rgba(20, 20, 20, 1);
+    background-color: rgb(76, 78, 84);
+    color: white;
+}
+
+button:hover {
+    color: rgb(0, 247, 255);
+}
+
+input {
+    background-color: #adadad;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(20, 20, 20, 1);
+}
+
+.text {
+    color: white;
+}
+
+.container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 .verde {
     color: green;
 }
