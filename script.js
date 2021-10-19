@@ -11,17 +11,32 @@ function add() {
 }
 
 function listar() {
-    document.getElementById("lista").innerHTML = lista;
+    document.getElementById("lista").innerHTML = "Lista: " + lista;
 }
 
 function mostrarMayor() {
-    const listaOrdenada = lista.sort(function(a, b){return a-b});
+    const listaOrdenada = lista.sort(function (a, b) { return a - b });
     mayor = listaOrdenada[listaOrdenada.length - 1];
-    document.getElementById("mayor").innerHTML = mayor;
+    document.getElementById("mayor").innerHTML = "Mayor: " + mayor;
+    if (mayor >= 100) {
+        document.getElementById("mayor").classList.add("verde")
+        document.getElementById("mayor").classList.remove("rojo")
+    } else {
+        document.getElementById("mayor").classList.add("rojo")
+        document.getElementById("mayor").classList.remove("verde")
+    }
 }
 
 function mostrarMenor() {
-    const listaOrdenada = lista.sort(function(a, b){return a-b});
+    const listaOrdenada = lista.sort(function (a, b) { return a - b });
     menor = listaOrdenada[0];
-    document.getElementById("menor").innerHTML = menor;
+    document.getElementById("menor").innerHTML = "Menor: " + menor;
+    if (menor < 100) {
+        document.getElementById("menor").classList.add("verde")
+        document.getElementById("menor").classList.remove("rojo")
+    } else {
+        document.getElementById("menor").classList.add("rojo")
+        document.getElementById("menor").classList.remove("verde")
+    }
+
 }
