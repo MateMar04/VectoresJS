@@ -15,6 +15,6 @@ function listar() {
 }
 
 function mostrarMayor() {
-    mayor = lista.sort[-1]
-    document.getElementById
+    mayor = lista.sort()[lista.length - 1];
+    document.getElementById("mayor").innerHTML = mayor;
 }
