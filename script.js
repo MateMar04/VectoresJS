@@ -1,4 +1,4 @@
-const lista = new Array();
+var lista = new Array();
 
 var mayor;
 var menor;
@@ -39,4 +39,8 @@ function mostrarMenor() {
         document.getElementById("menor").classList.remove("verde")
     }
 
+}
+
+function borrar() {
+    lista = [];
 }
