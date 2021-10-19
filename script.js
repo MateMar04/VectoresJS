@@ -15,6 +15,13 @@ function listar() {
 }
 
 function mostrarMayor() {
-    mayor = lista.sort()[lista.length - 1];
+    const listaOrdenada = lista.sort(function(a, b){return a-b});
+    mayor = listaOrdenada[listaOrdenada.length - 1];
     document.getElementById("mayor").innerHTML = mayor;
+}
+
+function mostrarMenor() {
+    const listaOrdenada = lista.sort(function(a, b){return a-b});
+    menor = listaOrdenada[0];
+    document.getElementById("menor").innerHTML = menor;
 }
